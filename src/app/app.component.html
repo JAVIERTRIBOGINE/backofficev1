@@ -1,4 +1,21 @@
-TEST TRADUCCION: {{'TITLE' | translate}}
+<router-outlet></router-outlet>
+<!-- TEST TRADUCCION: {{'TITLE' | translate}}
 <button (click)="getDataApi()">TRAER DATOS DE API</button>
 --
-<P>{{dataApi}}</P>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Alias</th>
+        <th>mail</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of allUsers">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.alias}}</td>
+            <td>{{user.mail}}</td>
+        </tr>
+    </tbody>
+</table>
+<app-create-competition></app-create-competition> -->
