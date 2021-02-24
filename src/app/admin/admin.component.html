@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div #containerSidebar class="sidebar" data-color="red" data-image="">
+        <app-sidebar #desktopSidebar></app-sidebar>
+        <div #elemSidebar class="sidebar-background" style="background-image: url(assets/img/login-background.jpg)"></div>
+        <button #toggleButton type="button" class="no-decoration" *ngIf="!isMobileMenu()" data-toggle="collapse"
+        (click)="deskTopSidebarToggle()">
+        <div *ngIf="!noCollapsed; else collapsed">
+            <i class="pe-7s-angle-right-circle"></i>
+        </div>
+        <ng-template #collapsed>
+            <span><i class="pe-7s-angle-left-circle"></i></span>
+        </ng-template>
+    </button>
+    </div>
+
+    <div #elemMainPanel class="main-panel">
+        <app-navbar></app-navbar>
+        <div class="custom-container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
