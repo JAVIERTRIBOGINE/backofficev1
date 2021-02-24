@@ -1,0 +1,50 @@
+<!-- 
+<div class="input-container d-flex flex-row flex-nowrap align-items-center" [ngClass]="updateStyles">
+    <div class="input-img"></div>
+    <div class="input">
+      <div class="input-title d-flex align-items-center">
+        {{ labelText | translate }} <span *ngIf="!readOnly && requiredValidator" class="validation-required">{{ 'COMMON.REQUIRED_TEXT' | translate }}</span>
+      </div>
+      <div *ngIf="type !== 'textarea'; else textarea">
+        <input
+        [type]="type"
+        [placeholder]="placeholder | translate"
+        [(ngModel)]="value"
+        (ngModelChange)="updateValue()"
+        (keypress)="keyPress($event)"
+        [disabled]="disabled"
+        (focus)="changeFocus()"
+        (blur)="changeFocus()"
+        [attr.max]="max ? max : null"
+        [attr.maxlength]="maxLength ? maxLength : null"
+        [attr.min]="min ? min : null"
+      />
+      </div>
+      <ng-template #textarea>
+        <textarea
+        style="width: 100%; max-width: 100%; max-height: 5rem;border-color: lightgray; resize:both"
+        [placeholder]="placeholder | translate"
+        [(ngModel)]="value"
+        (ngModelChange)="updateValue()"
+        (keypress)="keyPress($event)"
+        [disabled]="disabled"
+        [readOnly]="readOnly"
+        (focus)="changeFocus()"
+        (blur)="changeFocus()"
+        [attr.max]="max ? max : null"
+        [attr.min]="min ? min : null"
+      ></textarea>
+      </ng-template>
+   
+      <div class="status-img" appIcon iconName="bola_rosa_aspa" iconSize="15" [ngClass]="{ show: isWrongField }"></div>
+    </div>
+  </div>
+  <div class="form-field-error" [ngClass]="{ show: isWrongField }">
+    {{ control.errors?.formatError ? control.errors.formatError: error | translate }}
+  </div>
+  <div class="form-field-error" [ngClass]="{ show: isIncluded }">
+    OID ya incluído
+  </div>
+  <div class="form-field-error" [ngClass]="{ show: isInvalidFormat && !isWrongField}">
+    {{control.errors?.formatError}}
+  </div> -->

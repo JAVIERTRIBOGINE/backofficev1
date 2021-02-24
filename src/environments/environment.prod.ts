@@ -1,3 +1,9 @@
 export const environment = {
-  production: true
+  production: true,
+  api: {
+    api: '/api'
+  },
+  endpoint: {
+    users: '/users'
+  }
 };
