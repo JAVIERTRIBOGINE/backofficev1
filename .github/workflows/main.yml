@@ -1,4 +1,4 @@
-name: Close as a feature
+name: testing
 on:
   issues:
     types: [labeled]
