@@ -1,0 +1,26 @@
+<button (click)="generateCompetition()">GENERA COMPETICIÓN</button>
+<table>
+    <thead>
+        <th>
+            JORNADA
+        </th>
+        <th>
+            LOCAL
+        </th>
+        <th>
+            VISITANTE
+        </th>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let ronda of rondas, index as iRonda">
+            <ng-container *ngFor="let partido of ronda, index as iPartido">
+                <tr >
+                    <td>{{(iRonda+1)}}</td>
+                    <td>{{equipos[partido['local']]}}</td>
+                    <td>{{equipos[partido['visitante']]}}</td>
+                </tr>    
+            </ng-container>    
+        </ng-container>
+        
+    </tbody>
+</table>
