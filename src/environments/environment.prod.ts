@@ -4,6 +4,7 @@ export const environment = {
     api: '/api'
   },
   endpoint: {
-    users: '/users'
+    users: '/users',
+    loginUrl: '/auth'
   }
 };
